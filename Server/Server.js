@@ -10,7 +10,6 @@ const port = process.env.PORT || 3000;
 // Use CORS middleware
 app.use(cors());
 
-// Read politicians data
 let politicians;
 try {
   const rawData = fs.readFileSync(path.join(__dirname, 'api', 'data.json'), 'utf-8');
@@ -19,7 +18,7 @@ try {
   
 } catch (error) {
   console.error('Error reading or parsing data.json:', error);
-  politicians = []; // Provide a default empty array if file reading fails
+  politicians = []; 
 }
 
 // API endpoint

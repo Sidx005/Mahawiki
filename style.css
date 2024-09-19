@@ -1,0 +1,189 @@
+*{
+    
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-auto-rows: minmax(150px , auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.grid-item{
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    
+}
+
+.img1{
+    border: 1px solid black;
+   padding:10px;
+  text-align: center;
+  gap: 20px;
+}
+.img1 img{
+    max-height: 100%;
+}
+#sidebar {
+    position: fixed;
+  display: none;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #f4f4f4;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    padding-top: 20px;
+    z-index: 999;
+    transition: 0.3s ease-in-out;
+}
+.fa-x:hover{
+    border: 1px solid black;
+    color: gray;
+    padding: 2px 3px;
+}
+.fa-bars:hover{
+background-color: aliceblue;
+color: black;
+padding: 2px;
+
+
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    padding: 10px 20px;
+}
+
+.map-container{
+    background-image: url('Maharashtra_Map_With_District_PNG_Transparent_With_Clear_Background_ID_290319_png_-_Free_PNG_Images-removebg-preview.png') ;
+    
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid black;
+}
+@media(max-width:768px){
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+.image-container .img1{
+   font-size: 5px;
+}
+ input{
+   width: 100px;
+    
+ }   
+ .foods{
+    display: flex;
+    flex-direction: column;
+  align-items: center; 
+}
+ #header a{
+font-size: 5px;
+ }
+ #header h3{
+font-size: 15px;
+ }
+ #header p{
+   font-size: 10px;
+ }
+ #sidebar li a{
+    font-size: 15px;
+ }
+}
+#Politicians{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#pol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex: 0 1 1;
+}
+.PartyDetails{
+    border-radius: 20px;
+    min-height:100px ;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:start;
+    background: #000;
+    color: #f4f4f4;
+    font-family:sans-serif;
+    padding: 20px;
+    
+}
+#pol>div h1{
+    font-size: 15px;
+
+}
+#pol div p{
+    font-size: 15px;
+}
+.PartyName{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+}
+.Leader{
+    display: flex;
+   justify-content: left;
+   align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+#food-items{
+width: 100%;
+display: grid;
+gap: 10px;
+grid-template-columns: auto auto;
+grid-template-rows: auto;
+justify-content: space-evenly;
+justify-items: center;
+align-content: space-evenly;
+align-items: center;
+
+
+}
+#foodgrid{
+    padding: 5px;
+}
+.imageContain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+ /* -ms-grid-column-span: 4;     */
+  
+}
+.imageContain img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

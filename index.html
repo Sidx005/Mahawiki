@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maha-Wiki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #Mode{
+            position: absolute;
+            right: 2px;
+
+        }
+    </style>
+  <link rel="icon" type="image/x-icon" href="Logo.webp">
+</head>
+<body>
+    <div id="header" style=" padding: 2px; display: flex;gap:5px;width: 100%;">
+        <button id="Mode" onclick="toggleBackgroundColor()"><i class="fas fa-moon"></i></button>
+        <div class="bar-contain" style="padding: 4px; ">
+        <i class="fas fa-bars" id="bars" style="cursor: pointer;"></i>
+        </div>
+        <nav>
+            
+            <div id="sidebar">
+                
+                <ul >
+                    <li><i class="fas fa-x" style="cursor: pointer;color: black;"></i></li>
+                    <li><a style="text-decoration: none;color: black;" href="#" onclick="scroll('')">Home</a></li>
+                    <li><a style="text-decoration: none;color: black;" href="#About" onclick="scroll('About')">About</a></li>
+                    <li><a style="text-decoration: none;color: black;" href="#News" onclick="scroll('News')">News</a></li>
+                    <li><a style="text-decoration: none;color: black;" href="#foodgrid" onclick="scroll('foodgrid')">Food</a></li>
+                    <li><a style="text-decoration: none;color: black;" href="#festivals" onclick="scroll('festivals')">Festivals</a></li>
+                    <li><a style="text-decoration: none;color: black;" href="#maps" onclick="scroll('maps')">Map</a></li>
+
+                    <li><a href="Politicians.html">Politicians</a></li>
+                </ul>
+            </div>
+            
+            
+        </nav>
+        <div class="logo11" style="display: flex; gap: 5px;">
+            <img src="Logo.webp" alt="" height="20px" style="margin-left: 8px;">
+            <h3 style="margin-top: 0; text-align: justify;">MahaWiki <br><p style="font-size: 8px;">The Maharashtra encyclopedia</p></h3>
+        </div>
+        <div style="position: relative;">
+            <input type="search" name="" id="search" placeholder="search" style="height: 20px; border-radius: 0px; border: 0.7px solid; padding-left: 25px;">
+            <i class="fa-solid fa-magnifying-glass" style="color: black;font-size: 10px;position: absolute; top: 5px; left: 5px;"></i>
+        </div>
+        <a href="account.html" style="text-decoration: none;color: blue;font-size: 13px;">Create account</a>
+    </div>
+    <hr>
+    <div class="describe" style="border: 1px solid grey;display: flex;align-items: center;justify-content: center;text-align: center;">
+      <h3>Welcome to <a href="" style="color: blue;text-decoration: none;">MahaWiki</a><br><p style="text-align: justify;font-size: 7px;">Your go-to place to discover everything about Maharashtra! <br>Dive into Maharashtra's wonders with us!"</p></h3>
+     
+    </div>
+    <div class="grid-container " style="justify-content: center;">
+        <div class=" grid-item grid-item-1 " style="display: block;padding: 5px;" id="About">
+            <h4 style="border: 0.8px solid black;background: aliceblue;width: 100%;height: 20px;margin-top: 0;text-align: center;">About</h4>
+        <p style="text-align: justify;"><br>Maharashtra  is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau. It is bordered by the Arabian Sea to the west, the Indian states of Karnataka and Goa to the south, Telangana to the southeast and Chhattisgarh to the east, Gujarat and Madhya Pradesh to the north, and the Indian union territory of Dadra and Nagar Haveli and Daman and Diu to the northwest.[16] Maharashtra is the second-most populous state in India and the third-most populous country subdivision globally. </p>
+        
+        </div>
+        <div class=" grid-item grid-item-2" style="display: block;padding: 5px;" id="News" >
+            <h4 style="border: 0.8px solid black;background: aliceblue;width: 100%;height: 20px;margin-top: 0;text-align: center;">News</h4>
+             <marquee behavior="" direction="up">
+                <ul style="display: block;">
+                    <li><a href="https://www.loksatta.com/mumbai/facilities-maratha-reservation-advisory-board-4-lakhs-remuneration-air-travel-separate-office-mumbai-print-news-css-98-4142451/">"Maratha Reservation Committee Unveils Extensive Facilities: 4 Lakh Income, Air Travel, 24-Hour Services Flood In"</a> </li><br>
+                    <li><a href="https://www.loksatta.com/desh-videsh/chhattisgad-kisan-nyay-yojana-by-congress-cm-bhupesh-baghel-pmw-88-3970611/">"Chhattisgarh Government Transfers ₹1895 Crore into Farmers' Accounts, Benefits 24.52 Lakh; Discover the Farmer Justice Scheme!"</a></li><br>
+                    <li><a href="https://www.loksatta.com/maharashtra/big-decision-of-the-government-for-the-students-of-dhangar-community-ajit-pawar-informed-through-twitter-sgk-96-3913509/">"Government's Major Decision for Dhangar Community Revealed by Ajit Pawar on Twitter!"</a></li><br>
+                    <li><a href="https://www.loksatta.com/desh-videsh/indian-origin-couple-found-dead-sold-4-dollar-million-home-amid-funds-crunch-sgk-96-4130763/?utm_source=Taboola_Recirculation&utm_medium=RC&utm_campaign=LS">"Indian-Origin Couple Tragically Found Dead After Selling $4 Million Home Amid Financial Crisis"</a></li><br>
+                    <!-- <li><a href="Politicians.html">Politicians</a></li> -->
+                </ul>
+             </marquee>
+        
+        </div>
+        <div class=" grid-item grid-item-3" style="display: block;padding: 5px;" id="places">        
+        <h4 style="border: 0.8px solid black;background: aliceblue;width: 100%;height: 20px;margin-top: 0;text-align: center;">Places to visit</h4>
+      <p style="text-align: center;">Maharashtra has many places to visit, including historical sites, museums, and parks.</p>
+ <div class="image-container" style="display: block;">
+    <div class="img1"> 
+        <img src="Elephanta_Caves.jpg" alt=""height=100px>
+    <h3>Elephanta caves</h3>
+    <p>The Elephanta Caves are located in Western India on Elephanta Island (otherwise known as the Island of Gharapuri), which features two hillocks separated by a narrow valley. The small island is dotted with numerous ancient archaeological remains that are the sole testimonies to its rich cultural past.</p>
+    </div>
+    <div class="img1"> <img src="Park.webp" alt=""height=100px>
+        <h3>Maharashtra Nature Park</h3>
+    <p> A Green Emerald of Mumbai City
+        Maintained strictly to conserve its Natural Heritage (with the focus to conserve all life forms those who have made Nature Park their home), while on visit to MNP every visitor fails to remember that he is still very much in the heart of the city.</p>
+ 
+    </div>
+    <div class="img1"> <img src="Raigad.jpg" alt=""height=100px>
+        <h3>Raigad Fort</h3>
+        <p> Raigad, situated in the Raigad district of Maharashtra, India, is a hill fort located in the town of Mahad. It is one of the strongest fortresses on the Deccan Plateau and was historically referred to as Rairee or Rairy fort.[1]
+
+            Chhatarpati Shivaji Maharaj, the Maratha ruler, along with the Chief Engineer Hiroji Indulkar, oversaw the construction and development of various buildings and structures within Raigad. In 1674, after being crowned the king of the Maratha kingdom, Shivaji chose Raigad as his capital. Under his reign, the Maratha Empire expanded to encompass a significant portion of western and central India.[2] </p>
+     
+    </div>
+    <div class="img1"> <img src="SJNP.JPG" alt=""height=100px>
+        
+    <h3 >Sanjay Gandhi National Park </h3>
+<p>
+    Sanjay Gandhi National Park (SGNP), is an 87 km2 (34 sq mi) protected area in <a href="https://en.wikipedia.org/wiki/Mumbai" style="text-decoration: none; color: blue;" title="Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave temples dedicated to the Hindu god Shiva. The city's also famous as the heart of the Bollywood film industry." id="Mumb">Mumbai</a>, Maharashtra. It was established in 1969 with its headquarters situated at Borivali.[1]
+
+The 2400-year-old Kanheri caves, sculpted by monks out of the rocky basaltic cliffs, lie within the park. The rich flora and fauna of the Sanjay Gandhi National Park attract more than 2 million visitors every year.[4]. 
+The park occupies most of the northern suburbs of Mumbai. To the west lie the suburbs of Goregaon, Malad, Kandivali, Borivali and Dahisar. To the east lie the suburbs of Bhandup and Mulund. To the south lies the Aarey Milk Colony and the university campus of IIT Bombay. 
+</p>
+</div>
+ </div>
+    </div>
+        <div class=" grid-item grid-item-4"  id="foodgrid">
+            <h4 style="border: 0.8px solid black;background: aliceblue;width: 100%;height: 20px;margin-top: 0;text-align: center;">Foods</h4>
+     <div id="food-items">
+        <script>
+        const foodItemContainer = document.getElementById('food-items');
+        const items=[{
+                id:1,
+                src:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgaCo8MyoCR2OLwt9h1CJV5gfSmJX2XEV55w&s'
+
+            },{
+                id:2,
+                src:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_nM8es1QMZIUnlR_pYfd6cAUB4hzNLROhKQ&s'
+            },
+        {
+                id:3,
+                src:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgaCo8MyoCR2OLwt9h1CJV5gfSmJX2XEV55w&s'
+
+            },
+        {
+                id:4,
+                src:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgaCo8MyoCR2OLwt9h1CJV5gfSmJX2XEV55w&s'
+
+            },
+        
+        
+        ]
+            const itemsHTML = items.map(item => `<div class="imageContain"> <img src=${item.src}/></div>`).join('');
+foodItemContainer.innerHTML = itemsHTML;
+
+        </script>
+     </div>
+        
+    </div>
+    <div class=" grid-item grid-item-5" style="display: flex;justify-content: center;align-items: center;flex-direction: column;padding: 5px;" id="maps">
+        <h4 style="border: 0.8px solid black;background: aliceblue;width: 100%;height: 20px;margin-top: 0;text-align: center;">Maps</h4>
+ <div class="map-container" id="maps">
+    
+ </div>
+ 
+ <hr style="width: 100%;">
+ <div class="location" style="width: 100%;display: flex;gap: 5px;justify-content: center;align-items: center;">
+    <div class="domain"  >
+   <p>
+   <b>Country:</b><br>
+   <b>Region:</b>
+   </p> 
+ </div>
+ <div class="name">
+    <p>India <br>West-India</p>
+ </div>
+    </div>
+
+    <hr style="width: 100%;">
+
+    </div>
+    <div class="grid-item festivals" style="display: flex;flex-direction: column;align-items: center;padding: 5px;" id="festivals">
+        <h4 style="border: 0.8px solid black;background: aliceblue;width: 100%;height: 20px;margin-top: 0;text-align: center;">Festivals</h4>
+
+        <table>
+            <tr>
+                <td title="Ganesh Chaturthi (ISO: Gaṇeśa Caturthī), also known as Vinayak Chaturthi (Vināyaka Caturthī) or Ganeshotsav (Gaṇeśōtsava), is a Hindu festival that tributes Hindu deity Ganesha.[3] The festival is marked with the installation of Ganesha's clay murtis (devotional representations of a deity) privately in homes and publicly on elaborate pandals (temporary stages). Observances include chanting of Vedic hymns and Hindu texts, such as prayers and vrata (fasting).[3] Offerings and prasada from the daily prayers, that are distributed from the pandal to the community, include sweets such as modak as it is believed to be a favourite of Lord Ganesha.[4][5] The festival ends on the tenth day after start, when the Murti is carried in a public procession with music and group chanting, then immersed in a nearby body of water such as a river or sea, called visarjana on the day of Ananta Chaturdashi. In Mumbai alone, around 150,000 Murtis are immersed annually.[6] Thereafter the clay Murti dissolves and Ganesha is believed to return to his celestial abode."><img src="Ganeshchaturthi.webp" height="100" width="100" alt=""></td>
+                <td title="Gudi Padwa is a spring festival that marks the beginning of the traditional new year for Marathi and Konkani Hindus. It is celebrated on the first day of the Chaitra month according to the lunisolar Hindu calendar. In 2024, Gudi Padwa will be celebrated on April 9"><img src="gudi.jpeg" height="100" width="100" alt=""></td>
+            </tr>
+            <tr>
+                <td title="Dussehra, in Hinduism, holiday marking the triumph of Rama, an avatar of Vishnu, over the 10-headed demon king Ravana, who abducted Rama’s wife, Sita. The festival’s name is derived from the Sanskrit words dasha (“ten”) and hara (“defeat”). Symbolizing the victory of good over evil, Dussehra is celebrated on the 10th day of the month of Ashvina (September–October), the seventh month of the Hindu calendar, with the appearance of the full moon, an event called the “bright fortnight” (shukla paksha). Dussehra coincides with the culmination of the nine-day Navratri festival and with the tenth day of the Durga Puja festival. For many, it marks the beginning of preparation for Diwali, which occurs 20 days after Dussehra."><img src="dussehra.jpeg" height="100" width="100" alt=""></td>
+                <td title="Pola is a festival celebrated by farmers in Maharashtra and Chhattisgarh to honor the importance of bulls and oxen. It's celebrated on the new moon day of Pithori Amavasya, which usually falls in August. The festival marks the end of the monsoon season and the beginning of the agricultural year."><img src="pola.jpg" height="100" width="100" alt=""></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    
+    <button style="position:fixed;bottom: 10px;right: 0;"><a href="#header" onclick="scroll('header')"><i class="fa-solid fa-arrow-up"></i></a></button>
+    <footer style="border: 1px solid grey;margin-top: 30px;background-color: rgb(248, 248, 248);width: 100%;height: 80px;display: flex;justify-content: center;">
+<p style="text-align: center;color:black;" id="foottext">@2023 copyright</p>
+
+    </footer>
+ 
+<script>
+    let bar=document.getElementById('bars');
+    let sidebars=document.getElementById('sidebar');
+    bar.addEventListener('click',function() {
+        sidebars.style.display='block';
+        sidebars.style.left='0px';
+        
+
+    },false)
+    let cross=document.querySelector('.fa-x');
+   
+    cross.addEventListener('click',function() {
+        sidebars.style.display='block';
+        sidebars.style.left='-2000px';
+    },false);
+    function scroll(sectId){
+        const section = document.getElementById(sectionId);
+    if (section) {
+       section.scrollIntoView({ behavior: 'smooth' });
+    }
+    }
+    
+const button=document.getElementById('Mode');
+function toggleBackgroundColor(){
+    const body = document.querySelector('body');
+    const heading=document.querySelectorAll('h4');
+    const grid=document.getElementsByClassName('grid-item');
+    const foooter=document.querySelector('footer');
+    const text=document.querySelector('#foottext');
+        if (body.style.backgroundColor === 'white'||body.style.backgroundColor === '') {
+            body.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            
+            body.style.color = 'white';
+            for (let i = 0; i < grid.length; i++) {
+                grid[i].style.backgroundColor = 'black';
+                
+            }
+            for (let i = 0; i < heading.length; i++) {
+                heading[i].style.color = 'black';
+                
+            }
+            foooter.style.backgroundColor='black';
+            text.style.color='white'
+
+           
+          
+
+        } else {
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black';
+            for (let i = 0; i < grid.length; i++) {
+                grid[i].style.backgroundColor = 'whitesmoke';
+                
+            }
+        }
+}
+</script>
+ 
+</body>
+</html>

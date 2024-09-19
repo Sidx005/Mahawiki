@@ -1,0 +1,39 @@
+[
+    {
+        "id":1,
+        "Party":[
+            {
+                "Name":"Shivsena",
+                "Leader":"Uddav Thackeray",
+                "Successor":"Aditya Thackeray",
+                "Seats":7
+
+            }
+        ]
+    },
+    {
+        "id":2,
+        "Party":[
+            {
+                "Name":"BJP",
+                "Leader":"Eknath Shinde",
+                "Successor":"",
+                "Seats":240
+            }
+        ]
+    },{
+        "id":3,
+        "Party":[{
+            "Name":"NCP",
+            "Leader":"Sharad Pawar",
+            "Seats":8
+        }]
+    },{
+        "id":4,
+        "Party":[{
+            "Name":"Congress",
+            "Leader":"Rahul Gandhi",
+            "Seats":99
+        }]
+    }
+]
